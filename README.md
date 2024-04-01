@@ -1,4 +1,4 @@
-# Playesrs-Intuit-Assignment
+# Players-Intuit-Assignment
 
 
 <b>Introduction:</b><br/>
