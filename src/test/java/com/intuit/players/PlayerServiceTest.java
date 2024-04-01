@@ -42,14 +42,14 @@ public class PlayerServiceTest {
         assertEquals(expectedPlayers, actualPlayers);
     }
 
-//    @Test
-//    public void testGetAllPlayersByPageNumber() {
-//        List<Player> expectedPlayers = List.of(player1);
-//        Pageable pageable = PageRequest.of(PAGE_NUMBER, PAGE_SIZE);
-//        Mockito.when(playerRepository.findAll(pageable)).thenReturn(expectedPlayers);
-//        Page<Player> actualPlayers = playerService.getAllPlayers(pageable);
-//        assertEquals(expectedPlayers, actualPlayers);
-//    }
+    @Test
+    public void testGetAllPlayersByPageNumber() {
+        List<Player> expectedPlayers = List.of(player1);
+        Pageable pageable = PageRequest.of(PAGE_NUMBER, PAGE_SIZE);
+        Mockito.when(playerRepository.findAll(pageable)).thenReturn(expectedPlayers);
+        Page<Player> actualPlayers = playerService.getAllPlayers(pageable);
+        assertEquals(expectedPlayers, actualPlayers);
+    }
 
     @Test
     public void testGetPlayer() {
